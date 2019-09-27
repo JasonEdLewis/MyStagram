@@ -24,4 +24,3 @@ Ted = User.create(username: "Ted", password:"acb123")
 
 
 
-
