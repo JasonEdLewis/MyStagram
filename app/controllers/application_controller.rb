@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::API
 
     def encode_token (payload)
-        token = JWT.encode payload, 'hexidecimal', 'HS256'
+        JWT.encode payload, 'hexidecimal', 'HS256'
     end
 
     def user_payload(user)
@@ -9,6 +9,6 @@ class ApplicationController < ActionController::API
     end
     
 
- render json: {token: token}
+
 
 end
