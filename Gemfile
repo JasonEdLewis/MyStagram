@@ -18,7 +18,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem "jwt", "~> 2.1"
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
-gem 'active_model_serializers', '0.9.3'
+# gem 'active_model_serializers', '0.9.3'
 gem 'fast_jsonapi'
 
 # Reduces boot times through caching; required in config/boot.rb
