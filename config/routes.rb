@@ -17,4 +17,7 @@ Rails.application.routes.draw do
   post '/comments', to: 'comments#create'
   get   '/comments', to: 'comments#index'
   get  '/comments/:id', to: 'comments#show'  
+
+  # ========== Follows Model ======== #
+  get '/Follows', to: 'follows#index'
 end
