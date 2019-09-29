@@ -9,11 +9,13 @@ class ApplicationController < ActionController::API
     end
 
     def token 
+      
       request.headers["Authorization"]
     end
 
     def decoded_token
-        decoded_token = JWT.decode token, 'hexidecimal', true , { algorithm: 'HS256'} 
+        #   byebug
+       JWT.decode token, 'hexidecimal', true , { algorithm: 'HS256'} 
     end
 
     def current_user

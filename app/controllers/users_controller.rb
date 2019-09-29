@@ -30,7 +30,7 @@ class UsersController < ApplicationController
             # byebug
         #EVENTUALLY USE THIS
         if current_user
-            render current_user
+            render json: current_user
         end
        
         #WHERE 👆🏽 CAME FROM BEFORE IT WAS SENT TO APP CONTROLLER
