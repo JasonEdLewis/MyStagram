@@ -1,5 +1,15 @@
 class UsersController < ApplicationController
 
+    def index
+        users =User.all 
+        render json: users,except: [:password_digest,:created_at,:updated_at]
+    end
+
+
+    def show
+        user = User.find(params[:id])
+        render json: user,except: [:password_digest,:created_at,:updated_at]
+    end
 
 
     def create
@@ -13,6 +23,7 @@ class UsersController < ApplicationController
         render json: {message: "Please provide valid username and/ password"}
         end
     end
+    
 
     def profile
 

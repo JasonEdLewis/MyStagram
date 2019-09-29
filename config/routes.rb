@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   resources :follows
+
+
+  # ========== Test Routes ======== #
+  get '/users/:id', to: 'users#show'
+  get '/users', to: 'users#index'
   
   # ========== Logging in & SignUp ======== #
   post '/login', to: 'auth#login'
