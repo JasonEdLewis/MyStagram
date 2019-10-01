@@ -8,9 +8,9 @@
 
 
 # ==================== USERS ======================== #
-Jack = User.create(username: "Jack", password:"acb123")
+George = User.create(username: "George", password:"acb123")
 Jill = User.create(username: "Jill", password:"acb123")
-Bill = User.create(username: "Bill", password:"acb123")
+Corey = User.create(username: "Corey", password:"acb123")
 Phil = User.create(username: "Phil", password:"acb123")
 Will = User.create(username: "Will", password:"acb123")
 Eric = User.create(username: "Eric", password:"acb123")
@@ -23,7 +23,7 @@ Josh = User.create(username:"Josh",password:"acb123")
 
 # ==================== Follows ======================== #
 def create_follows
-users = [Jack,Jill,Bill,Phil,Will,Eric,Derick,Ted,Charlie, Jeff, Ali, Josh]
+users = [George,Jill,Corey,Phil,Will,Eric,Derick,Ted,Charlie, Jeff, Ali, Josh]
  
 users.each_with_index do |user, x|
     i = 0
@@ -85,46 +85,46 @@ def create_post
 
 
 
-    photos = ['./img/allison-christine-8j-2d94Orlc-unsplash.jpg',
-        './img/amin-rokhide-3bmI5SLwfQM-unsplash.jpg' ,
-        './img/anita-austvika-J4pBYVlBxh4-unsplash.jpg' ,
-        './img/banter-snaps-BZzHWmQUszE-unsplash.jpg' ,
-        './img/brandon-hoogenboom-C6K0tIm6qvw-unsplash.jpg' ,
-        './img/brandon-hoogenboom-t_S_Qtf0GPc-unsplash.jpg' ,
-        './img/christiann-koepke-w_wDNUpq84E-unsplash.jpg' ,
-        './img/dmitrii-vaccinium-ByUAo3RpA6c-unsplash.jpg' ,
-        './img/eberhard-grossgasteiger-KVKYuYjKPnk-unsplash.jpg' ,
-        './img/fezbot2000-VILQd5PK--I-unsplash.jpg' ,
-        './img/houcine-ncib-lmVVTgPDD0U-unsplash.jpg' ,
-        './img/houcine-ncib-nY2Bcudehcc-unsplash.jpg' ,
-        './img/jack.png' ,
-        './img/jamshed-khedri-cHUrGGw2wU8-unsplash.jpg' ,
-        './img/jc-falcon-jvEENEKsM-I-unsplash.jpg' ,
-        './img/johan-de-jager-7Z2U9MPCKN0-unsplash.jpg' ,
-        './img/johan-de-jager-MoMIEEG_kHE-unsplash.jpg' ,
-        './img/jon-tyson-U1FLk5DykQs-unsplash.jpg' ,
-        './img/khanh-dang-z7odTZZ_gfg-unsplash.jpg' ,
-        './img/luke-jeremiah-6hXYSkEyEr8-unsplash.jpg' ,
-        './img/marcis-berzins-KyuvxYkR36Q-unsplash.jpg' ,
-        './img/markus-spiske-ur3wTilBmjQ-unsplash.jpg' ,
-        './img/maurits-bausenhart-QMRN_GX7p4I-unsplash.jpg' ,
-        './img/max-muselmann-5nH0Hh78Nh4-unsplash.jpg' ,
-        './img/mihaly-koles-q5479QVbdGo-unsplash.jpg' ,
-        './img/naitian-tony-wang-oafvLFMz9eE-unsplash.jpg' ,
-        './img/prescott-horn-8HnvsAd67qc-unsplash.jpg' ,
-        './img/prescott-horn-Xr2BYW5B8nQ-unsplash.jpg' ,
-        './img/randy-laybourne-NqSw3Y9RtmU-unsplash.jpg' ,
-        './img/randy-laybourne-h5MBEIV3t1s-unsplash.jpg' ,
-        './img/sara-kurfess-0LnSDQu5T5M-unsplash.jpg' ,
-        './img/spencer-gu-EI6sCmsJOS0-unsplash.jpg' ,
-        './img/the-joy-of-film-JayoUbXMppo-unsplash.jpg' ,
-        './img/the-joy-of-film-mmbRdjucSF8-unsplash.jpg' ,
-        './img/the-new-york-public-library-xXI1nmgPHVw-unsplash.jpg' ,
-        './img/the-nigmatic-pAGWDcyK9As-unsplash.jpg' ,
-        './img/william-navarro-ajMNJnxNo8k-unsplash.jpg' ,
-        './img/x-N4QTBfNQ8Nk-unsplash.jpg' ,
-        './img/yoav-hornung-yDuxvDzqn1k-unsplash.jpg' ,
-        './img/zip-house-design-HZDQCetoZtY-unsplash.jpg' ]
+    photos = [ '../img/allison-christine-8j-2d94Orlc-unsplash.jpg',
+         '../img/amin-rokhide-3bmI5SLwfQM-unsplash.jpg' ,
+         '../img/anita-austvika-J4pBYVlBxh4-unsplash.jpg' ,
+         '../img/banter-snaps-BZzHWmQUszE-unsplash.jpg' ,
+         '../img/brandon-hoogenboom-C6K0tIm6qvw-unsplash.jpg' ,
+         '../img/brandon-hoogenboom-t_S_Qtf0GPc-unsplash.jpg' ,
+         '../img/christiann-koepke-w_wDNUpq84E-unsplash.jpg' ,
+         '../img/dmitrii-vaccinium-ByUAo3RpA6c-unsplash.jpg' ,
+         '../img/eberhard-grossgasteiger-KVKYuYjKPnk-unsplash.jpg' ,
+         '../img/fezbot2000-VILQd5PK--I-unsplash.jpg' ,
+         '../img/houcine-ncib-lmVVTgPDD0U-unsplash.jpg' ,
+         '../img/houcine-ncib-nY2Bcudehcc-unsplash.jpg' ,
+         '../img/jack.png' ,
+         '../img/jamshed-khedri-cHUrGGw2wU8-unsplash.jpg' ,
+         '../img/jc-falcon-jvEENEKsM-I-unsplash.jpg' ,
+         '../img/johan-de-jager-7Z2U9MPCKN0-unsplash.jpg' ,
+         '../img/johan-de-jager-MoMIEEG_kHE-unsplash.jpg' ,
+         '../img/jon-tyson-U1FLk5DykQs-unsplash.jpg' ,
+         '../img/khanh-dang-z7odTZZ_gfg-unsplash.jpg' ,
+         '../img/luke-jeremiah-6hXYSkEyEr8-unsplash.jpg' ,
+         '../img/marcis-berzins-KyuvxYkR36Q-unsplash.jpg' ,
+         '../img/markus-spiske-ur3wTilBmjQ-unsplash.jpg' ,
+         '../img/maurits-bausenhart-QMRN_GX7p4I-unsplash.jpg' ,
+         '../img/max-muselmann-5nH0Hh78Nh4-unsplash.jpg' ,
+         '../img/mihaly-koles-q5479QVbdGo-unsplash.jpg' ,
+         '../img/naitian-tony-wang-oafvLFMz9eE-unsplash.jpg' ,
+         '../img/prescott-horn-8HnvsAd67qc-unsplash.jpg' ,
+         '../img/prescott-horn-Xr2BYW5B8nQ-unsplash.jpg' ,
+         '../img/randy-laybourne-NqSw3Y9RtmU-unsplash.jpg' ,
+         '../img/randy-laybourne-h5MBEIV3t1s-unsplash.jpg' ,
+         '../img/sara-kurfess-0LnSDQu5T5M-unsplash.jpg' ,
+         '../img/spencer-gu-EI6sCmsJOS0-unsplash.jpg' ,
+         '../img/the-joy-of-film-JayoUbXMppo-unsplash.jpg' ,
+         '../img/the-joy-of-film-mmbRdjucSF8-unsplash.jpg' ,
+         '../img/the-new-york-public-library-xXI1nmgPHVw-unsplash.jpg' ,
+         '../img/the-nigmatic-pAGWDcyK9As-unsplash.jpg' ,
+         '../img/william-navarro-ajMNJnxNo8k-unsplash.jpg' ,
+         '../img/x-N4QTBfNQ8Nk-unsplash.jpg' ,
+         '../img/yoav-hornung-yDuxvDzqn1k-unsplash.jpg' ,
+         '../img/zip-house-design-HZDQCetoZtY-unsplash.jpg' ]
         
        
     i = 0
