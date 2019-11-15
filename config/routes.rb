@@ -25,4 +25,7 @@ Rails.application.routes.draw do
 
   # ========== Follows Model ======== #
   get '/Follows', to: 'follows#index'
+  get '/Follows/:id', to: 'follows#show'
+  post '/Follows/', to: 'follows#create'
+  delete '/Follows', to: 'follow#delete'
 end
