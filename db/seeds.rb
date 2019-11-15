@@ -8,6 +8,7 @@
 
 
 # ==================== USERS ======================== #
+# username, password,picture: URL ,bio,email,city,state,zip: INTEGER
 George = User.create(username: "George", password:"acb123")
 Jill = User.create(username: "Jill", password:"acb123")
 Corey = User.create(username: "Corey", password:"acb123")
