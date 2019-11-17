@@ -14,9 +14,11 @@ Rails.application.routes.draw do
   get '/profile', to: 'users#profile'
   
 # ========== Posts Model ======== #
-  post '/posts',  to: 'posts#create'
-  get '/posts', to: 'posts#index'
-  get '/posts/:id', to: 'posts#show'
+resources :posts, only: [ :index, :show,:create,:update, :destroy ]
+  # post '/posts',  to: 'posts#create'
+  # get '/posts', to: 'posts#index'
+  # get '/posts/:id', to: 'posts#show'
+  # patch '/posts/:id', to: 'posts#update'
 
  # ========== Comments Model ======== #
   post '/comments', to: 'comments#create'

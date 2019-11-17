@@ -23,16 +23,20 @@ class PostsController < ApplicationController
         end
            
     end
-
    
-
-    def edit
-        post = post = Post.find(params[:id])
-        post.update(post_params)
+    def update
+        post = Post.find_by(id: params[:id])
+        byebug
+        post.update(update_post_params)
     end
 
     private
+
     def post_params
-    params.permit(:user_id, :picture, :likes, :caption)
+        params.permit(:user_id, :picture, :likes, :caption)
+    end
+
+    def update_post_params
+        params.permit(:id,:picture, :likes, :caption)
     end
 end
