@@ -26,8 +26,9 @@ class PostsController < ApplicationController
    
     def update
         post = Post.find_by(id: params[:id])
-        byebug
         post.update(update_post_params)
+        
+        render json: post
     end
 
     private
