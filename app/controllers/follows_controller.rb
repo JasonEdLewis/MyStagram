@@ -13,13 +13,21 @@ class FollowsController < ApplicationController
     def create
         follow.create(params)
 
-    if follow.valid?
-        follow.save
-    else 
-        render json: {message: "You can not follow this user"}
-    end
+            if follow.valid?
+                follow.save
+            else 
+                render json: {message: "You can not follow this user"}
+            end
 
     end
+
+    def destroy 
+    
+        follow = Follow.find(params[:id])
+        follow.destroy
+        render json: {message: "You are no longer folllowing this user"}
+    end
+
 end
 
 
