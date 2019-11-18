@@ -27,8 +27,8 @@ def create_follows
 users = [George,Jill,Corey,Phil,Will,Eric,Derick,Ted,Charlie, Jeff, Ali, Josh]
  
 users.each_with_index do |user, x|
-    i = 0
-    while i < users.length do 
+    i = 1
+    while  i < 4 do 
         if i != x
             Follow.create(follower: users[i], followee: user)
         end
