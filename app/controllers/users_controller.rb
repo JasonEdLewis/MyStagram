@@ -15,7 +15,6 @@ class UsersController < ApplicationController
     def create
         
         user = User.create(user_params)
-        byebug
         if user.valid?
         encoded_token = encode_token(user_payload(user))
          render json: {token: encoded_token}
@@ -28,7 +27,6 @@ class UsersController < ApplicationController
 
     def profile
 
-            # byebug
         #EVENTUALLY USE THIS
         if current_user
             render json: current_user
