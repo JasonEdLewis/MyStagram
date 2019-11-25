@@ -20,7 +20,7 @@ Ted = User.create(username: "Ted", password:"acb123")
 Charlie = User.create(username:"Charlie",password:"acb123")
 Jeff = User.create(username:"Jeff",password:"acb123")
 Ali = User.create(username:"Ali",password:"acb123")
-Josh = User.create(username:"Josh",password:"acb123")
+Josh = User.create(username:"Josh",password:"acb123", picture:"https://firebasestorage.googleapis.com/v0/b/mygram-1f15a.appspot.com/o/images%2FHeadShot.jpeg?alt=media&token=63b7408d-b453-42a0-b69e-6d927cdfcaa3")
 
 # ==================== Follows ======================== #
 def create_follows
