@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   # ========== User Model ======== #
   get '/profile', to: 'users#profile'
+
   
 # ========== Posts Model ======== #
 resources :posts, only: [ :index, :show,:create,:update, :destroy ]
@@ -24,10 +25,11 @@ resources :posts, only: [ :index, :show,:create,:update, :destroy ]
   post '/comments', to: 'comments#create'
   get   '/comments', to: 'comments#index'
   get  '/comments/:id', to: 'comments#show'  
+  delete '/comments/:id', to: 'comments#destroy'
 
   # ========== Follows Model ======== #
   get '/Follows', to: 'follows#index'
   get '/Follows/:id', to: 'follows#show'
   post '/Follows/', to: 'follows#create'
-  delete '/Follows', to: 'follow#delete'
+  delete '/Follows', to: 'follow#destroy'
 end

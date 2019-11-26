@@ -16,10 +16,16 @@ class CommentsController < ApplicationController
         comment = Comment.create(comment_params)
         if comment.valid?
             comment.save
-            render json: comment
+            render json: comment, except: [:created_at,:updated_at]
         else 
             render json: {message: "Sorry, your comment wasnt entered correctly"}
         end 
+    end
+
+    def destroy
+        comment = Comment.find(params[:id])
+        comment.destroy
+        render json: {message:"Post Deleted!"}
     end
 
 
