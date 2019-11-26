@@ -22,7 +22,6 @@ class FollowsController < ApplicationController
     end
 
     def destroy 
-    
         follow = Follow.find(params[:id])
         follow.destroy
         render json: {message: "You are no longer folllowing this user"}
