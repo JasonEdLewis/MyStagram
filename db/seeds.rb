@@ -19,7 +19,7 @@ Derick = User.create(username: "Derick", password:"acb123")
 Ted = User.create(username: "Ted", password:"acb123")
 Charlie = User.create(username:"Charlie",password:"acb123")
 Jeff = User.create(username:"Jeff",password:"acb123")
-Ali = User.create(username:"Ali",password:"acb123")
+Ali = User.create(username:"Ali",password:"acb123", picture:"https://firebasestorage.googleapis.com/v0/b/mygram-1f15a.appspot.com/o/images%2Fjohan-de-jager-7Z2U9MPCKN0-unsplash.jpg?alt=media&token=eb63b275-d511-44cd-b7fc-d9ef49e69bb8")
 Josh = User.create(username:"Josh",password:"acb123", picture:"https://firebasestorage.googleapis.com/v0/b/mygram-1f15a.appspot.com/o/images%2FHeadShot.jpeg?alt=media&token=63b7408d-b453-42a0-b69e-6d927cdfcaa3")
 
 # ==================== Follows ======================== #
@@ -98,8 +98,8 @@ def create_post
          '../img/fezbot2000-VILQd5PK--I-unsplash.jpg' ,
          '../img/houcine-ncib-lmVVTgPDD0U-unsplash.jpg' ,
          '../img/houcine-ncib-nY2Bcudehcc-unsplash.jpg' ,
-         '../img/jack.png' ,
-         '../img/jamshed-khedri-cHUrGGw2wU8-unsplash.jpg' ,
+         'https://firebasestorage.googleapis.com/v0/b/mygram-1f15a.appspot.com/o/images%2Fhoucine-ncib-nY2Bcudehcc-unsplash.jpg?alt=media&token=b33b6cbd-5845-4ac7-a7eb-3d702af6340d' ,
+         'https://firebasestorage.googleapis.com/v0/b/mygram-1f15a.appspot.com/o/images%2Fzip-house-design-HZDQCetoZtY-unsplash.jpg?alt=media&token=a0062438-5160-4411-8962-3c374aea9a66' ,
          '../img/jc-falcon-jvEENEKsM-I-unsplash.jpg' ,
          '../img/johan-de-jager-7Z2U9MPCKN0-unsplash.jpg' ,
          '../img/johan-de-jager-MoMIEEG_kHE-unsplash.jpg' ,
@@ -121,11 +121,11 @@ def create_post
          '../img/the-joy-of-film-JayoUbXMppo-unsplash.jpg' ,
          '../img/the-joy-of-film-mmbRdjucSF8-unsplash.jpg' ,
          '../img/the-new-york-public-library-xXI1nmgPHVw-unsplash.jpg' ,
-         '../img/the-nigmatic-pAGWDcyK9As-unsplash.jpg' ,
-         '../img/william-navarro-ajMNJnxNo8k-unsplash.jpg' ,
-         '../img/x-N4QTBfNQ8Nk-unsplash.jpg' ,
-         '../img/yoav-hornung-yDuxvDzqn1k-unsplash.jpg' ,
-         '../img/zip-house-design-HZDQCetoZtY-unsplash.jpg' ]
+         'https://firebasestorage.googleapis.com/v0/b/mygram-1f15a.appspot.com/o/images%2Fbanter-snaps-BZzHWmQUszE-unsplash.jpg?alt=media&token=9505d191-d2a8-4722-b28e-1b0e86301cc0' ,
+         'https://firebasestorage.googleapis.com/v0/b/mygram-1f15a.appspot.com/o/images%2Ftraveling_mac.jpg?alt=media&token=a4085bbb-1bb3-4dc5-a533-32cee35022e8' ,
+         'https://firebasestorage.googleapis.com/v0/b/mygram-1f15a.appspot.com/o/images%2Fhoucine-ncib-lmVVTgPDD0U-unsplash.jpg?alt=media&token=2705ec08-6c40-4db1-9092-d340ebd811c8' ,
+         'https://firebasestorage.googleapis.com/v0/b/mygram-1f15a.appspot.com/o/images%2Fanita-austvika-J4pBYVlBxh4-unsplash.jpg?alt=media&token=18859cc2-44e1-44fa-a2a7-a95dde640e1c' ,
+         'https://firebasestorage.googleapis.com/v0/b/mygram-1f15a.appspot.com/o/images%2Fallison-christine-8j-2d94Orlc-unsplash.jpg?alt=media&token=41ea8e5e-93dd-481b-a6e6-32fd02ea021f' ]
         
        
     i = 0
