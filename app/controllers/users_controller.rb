@@ -44,6 +44,13 @@ class UsersController < ApplicationController
     # token = request.headers["Authorization"].split("\"")[1]
 
     end  
+
+    def destroy
+        user = User.find(params[:id])
+        byebug
+        user.destroy
+        render json: {message: "Your profile has been deleted"}
+    end
     
     
     private
