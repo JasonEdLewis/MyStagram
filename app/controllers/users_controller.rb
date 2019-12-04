@@ -25,10 +25,9 @@ class UsersController < ApplicationController
     end
 
     def update
-        user = User.find(params[:id])
-        user.update(user_params)
-        render json: user, except: [:password_digest,:created_at,:updated_at]
-        
+        user = User.find_by(id: params[:id])
+        user.update(update_params)   
+        render json: user     
     end
     
 
@@ -54,7 +53,6 @@ class UsersController < ApplicationController
 
     def destroy
         user = User.find(params[:id])
-        byebug
         user.destroy
         render json: {message: "Your profile has been deleted"}
     end
@@ -64,6 +62,9 @@ class UsersController < ApplicationController
 
     def user_params
         params.permit(:username, :password,:picture,:bio,:email,:city,:state,:zip)
+    end
+    def update_params
+        params.permit(:id,:username,:picture,:bio,:email,:city,:state,:zip)
     end
 
 end
