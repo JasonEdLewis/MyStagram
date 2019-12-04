@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   # ========== User Model ======== #
   get '/profile', to: 'users#profile'
+  patch '/users/:id', to: 'users#update'
   delete '/users/:id', to: 'users#destroy'
 
   

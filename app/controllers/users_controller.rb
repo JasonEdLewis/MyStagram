@@ -23,6 +23,13 @@ class UsersController < ApplicationController
         render json: {message: "Please provide valid username and/ password"}
         end
     end
+
+    def update
+        user = User.find(params[:id])
+        user.update(user_params)
+        render json: user, except: [:password_digest,:created_at,:updated_at]
+        
+    end
     
 
     def profile
