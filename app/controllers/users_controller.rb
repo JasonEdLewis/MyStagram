@@ -1,14 +1,15 @@
 class UsersController < ApplicationController
 
     def index
-        users =User.all 
-        render json: users,except: [:password_digest,:created_at,:updated_at]
+        users = User.all
+
+        render json: users.to_json(:include => {:posts => {:except => [:created_at,:updated_at]} },except: [:password_digest,:created_at,:updated_at] )
     end
 
 
     def show
         user = User.find(params[:id])
-        render json: user,except: [:password_digest,:created_at,:updated_at]
+        render json: user.to_json(:include => {:posts => {:except => [:created_at,:updated_at], :comments => {:except => [:created_at,:updated_at]} }} ,except: [:password_digest,:created_at,:updated_at] )
     end
 
 
