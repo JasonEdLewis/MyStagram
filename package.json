@@ -1,0 +1,29 @@
+{
+  "name": "Mystagram-backend",
+  "version": "1.0.0",
+  "description": "\"IG clone, Jay's way\"",
+  "main": "index.js",
+  "repository": "https://github.com/JasonEdLewis/myStagram.git",
+  "author": "jason <jasonedlewis@gmail.com>",
+  "license": "MIT"
+},
+"scripts": {
+  "build": "cd client && yarn install && yarn build && cd ..",
+  "deploy": "cp -a client/build/. public/",
+  "postinstall": "yarn build && yarn deploy && echo 'Client built!'"
+},
+},
+"engines": {
+"yarn": "1.19.0",
+"npm": "6.13.4",
+"node": "12.9.1"
+},
+{
+"name": "client",
+"version": "0.1.0",
+"private": true,
+"proxy": "http://localhost:3001",
+"dependencies": { 
+	
+	. . .
+}
