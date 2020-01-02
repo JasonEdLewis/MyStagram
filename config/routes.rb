@@ -34,4 +34,8 @@ resources :posts, only: [ :index, :show,:create,:update, :destroy ]
   get '/Follows/:id', to: 'follows#show'
   post '/Follows/', to: 'follows#create'
   delete '/Follows', to: 'follow#destroy'
+
+  get '*path', to: "application#fallback_index_html", constraints: ->(request) do
+    !request.xhr? && request.format.html?
+  end
 end
